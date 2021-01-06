@@ -5,7 +5,7 @@ import com.uipath.uipathpackage.util.StartProcessDtoJobPriority;
 public class JobOptions extends AuthenticatedOptions {
     private String processName;
     private String parametersFilePath;
-    private final String origin = "Jenkins";
+    private final String telemetryOrigin = "Jenkins";
     private StartProcessDtoJobPriority priority = StartProcessDtoJobPriority.Normal;
 
     private Integer jobsCount = 1;
@@ -27,8 +27,8 @@ public class JobOptions extends AuthenticatedOptions {
         this.processName = processName;
     }
 
-    public String getOrigin() {
-        return origin;
+    public String getTelemetryOrigin() {
+        return telemetryOrigin;
     }
 
     public String getParametersFilePath() {

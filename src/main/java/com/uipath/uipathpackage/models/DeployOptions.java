@@ -5,7 +5,7 @@ import java.util.List;
 public class DeployOptions extends AuthenticatedOptions {
     private String packagesPath;
     private List<String> environments;
-    private final String origin = "Jenkins";
+    private final String telemetryOrigin = "Jenkins";
 
     public String getPackagesPath() {
         return packagesPath;
@@ -23,7 +23,7 @@ public class DeployOptions extends AuthenticatedOptions {
         this.environments = environments;
     }
 
-    public String getOrigin() {
-        return origin;
+    public String getTelemetryOrigin() {
+        return telemetryOrigin;
     }
 }
